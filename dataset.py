@@ -22,4 +22,5 @@ class PklDataset(Dataset):
         x = self.__data_generation(self.x[idx])
         x = torch.FloatTensor(x)
         y = torch.FloatTensor(self.y[idx])
+        return self.x[idx], x, y
 
